@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src//styles/globalStyles.css">
+    <link rel="stylesheet" href="/src/styles/error.css">
+
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +21,18 @@
     <title>Git Search - User Not Found</title>
   </head>
   <body>
-
+    <main>
+      <section class="errorTitle">
+        <h1>Ooops!</h1>
+        <p>Não encotramos o usuário que você procurou, vamos tentar novamente.</p>
+        <button class="returnHome">Nova Busca</button>
+      </section>
+      <section class="errorImage">
+        <div>
+          <img src="/src/assets/images/alert.svg" alt="">
+        </div>
+      </section>
+    </main>
     <script type="module" src="../scripts/error.js"></script>
   </body>
 </html>

@@ -1,0 +1,94 @@
+main{
+  display: flex;
+  flex-direction: row;
+  
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-brand-1);
+    color: var(--color-grey-7);
+
+    height: auto;
+    width: 50%;
+    gap: 2.25rem;
+    padding: 0 9.375rem;
+}
+
+.mainTitle > h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: flex-start;
+    align-self: flex-start;
+}
+
+.mainTitle > p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: flex-start;
+    align-self: flex-start;
+    width: 70%;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-7);
+
+    height: auto;
+    width: 50%;
+    padding: 0 9.375rem;
+}
+
+.loginForm > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > form > h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2.875rem;
+    text-align: flex-start;
+    align-self: flex-start;
+}
+
+.loginForm > form > label{
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: flex-start;
+    align-self: flex-start;
+}
+
+.loginForm > form > input{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-7);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.loginForm > form > input::placeholder{
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.loginForm > form > button{
+    background-color: var(--color-brand-2);
+    color: var(--color-grey-7);
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+}
+

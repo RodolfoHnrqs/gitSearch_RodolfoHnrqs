@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +21,20 @@
     <title>Git Search</title>
   </head>
   <body>
-
+    <main>
+      <section class="mainTitle">
+        <h2>Git Search</h2>
+        <p>Encontre e se conecte com profissionais de forma rápida e fácil </p>
+      </section>
+      <section class="loginForm">
+        <form action="">
+          <h3>Procurar por um usuário</h3>
+          <label for="">Usuário Github</label>
+          <input class="inputUser" type="text" placeholder="Digite um usuário do github aqui...">
+          <button id="getUser" type="submit">Ver perfil no github</button>
+        </form>
+      </section>
+    </main>
     <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>
