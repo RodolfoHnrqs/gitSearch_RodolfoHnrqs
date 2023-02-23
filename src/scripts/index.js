@@ -8,11 +8,21 @@ export async function getUser(){
         .then(
             response => response.json()
         )
+        .then(
+            response => {
+                if(response.id){
+                    localStorage.setItem("user", JSON.stringify(response))
+                    window.location.replace("./src/pages/profile.html")
+                }else{
+                    window.location.replace("./src/pages/error.html") 
+                }
+            }
+
+        )
         .catch(
             error => window.location.replace("./src/pages/error.html")
         )
-        
-        window.location.replace("./src/pages/profile.html")
+
         return userApi
     })
 }
