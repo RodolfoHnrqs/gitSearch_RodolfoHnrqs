@@ -11,12 +11,6 @@ export async function getUser(){
         .then(
             response => {
                 localStorage.setItem("user", JSON.stringify(response))
-                // if(response.id){
-                //     localStorage.setItem("user", JSON.stringify(response))
-                //     window.location.replace("./src/pages/profile.html")
-                // }else{
-                //     window.location.replace("./src/pages/error.html") 
-                // }
             }
 
         )
