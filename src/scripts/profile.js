@@ -21,7 +21,7 @@ export async function getRepositories(user){
         return userRepos
 }
 
-getRepositories(user);
+await getRepositories(user);
 
 function getReposLocalStorage(){
     const reposLocalStorage = localStorage.getItem("repos")

@@ -34,8 +34,15 @@ main{
     margin-right: 22.5rem;
 }
 
+.reposContainer{
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+}
+
 .repos{
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -45,6 +52,8 @@ main{
     align-content: flex-start;
     margin: 0 auto;
     gap: 2rem;
+
+    padding-bottom: 60px;
     
 }
 
