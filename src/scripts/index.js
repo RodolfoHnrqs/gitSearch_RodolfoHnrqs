@@ -10,23 +10,17 @@ export async function getUser(){
         )
         .then(
             response => {
-                localStorage.setItem("user", JSON.stringify(response))
-            }
-
-        )
-        .catch(
-            error => window.location.replace("./src/pages/error.html")
-        )
-
-        .finally(
-            response => {
-                const user = JSON.parse(localStorage.getItem("user"))
-                if(user){
+                if(response.id){
+                    localStorage.setItem("user", JSON.stringify(response))
                     window.location.replace("./src/pages/profile.html")
                 }else{
                     window.location.replace("./src/pages/error.html") 
                 }
             }
+
+        )
+        .catch(
+            error => window.location.replace("./src/pages/error.html")
         )
 
         return userApi
